@@ -17,7 +17,7 @@
     "offline_enabled": true,
 
     "browser_action": {
-        "default_icon": "128_letter.png",
+        "default_icon": "64.png",
         "default_popup": "icon.html"
     },
 

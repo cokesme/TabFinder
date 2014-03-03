@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+
+    "name": "TabFinder",
+    "description": "Finding tabs with a ctrl+f like search",
+    "version" : "0.0.1",
+
+    "permissions": ["tabs"],
+    "omnibox": {"keyword": "tab"},
+
+    "offline_enabled": true,
+
+    "browser_action": {
+        "default_icon": "64.png",
+        "default_popup": "icon.html"
+    }
+}

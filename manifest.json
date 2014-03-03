@@ -11,7 +11,7 @@
     },
     "permissions": ["tabs"],
     "omnibox": {
-        "keyword": "tf",
+        "keyword": "tf"
     },
 
     "offline_enabled": true,

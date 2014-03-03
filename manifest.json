@@ -4,9 +4,15 @@
     "name": "TabFinder",
     "description": "Finding tabs with a ctrl+f like search",
     "version" : "0.1.1",
-
+    "icons": {
+        "16": "64.png",
+        "48": "64.png",
+        "128": "64.png"
+    },
     "permissions": ["tabs"],
-    "omnibox": {"keyword": "tab"},
+    "omnibox": {
+        "keyword": "tf",
+    },
 
     "offline_enabled": true,
 

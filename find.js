@@ -39,15 +39,9 @@ window.onload=
         //create event if firing from enter or just have to eventlisteners and pre-built function
         var submit_event = new CustomEvent("click", {});
 
-
-        //if they click the select button, should I just include the function in something called search and then
         submit.addEventListener("click", function(e){
-            //var input = this;//document.getElementById("find");
-            var string = find.value;
-            var first = string[0];
-            var len = string.length;
             //change the idea to just communicate with backgroun page
-            chrome.runtime.sendMessage({"value":string,"len":len});
+            chrome.runtime.sendMessage({"value":find.value,"len":find.value.length});
         });
 
         //event listener for the enter button

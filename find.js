@@ -46,31 +46,8 @@ window.onload=
             var string = find.value;
             var first = string[0];
             var len = string.length;
-            chrome.tabs.query({currentWindow: true},function(tabs){
-                for(var i = 0; i<tabs.length;i++){
-                    var check = tabs[i].url;
-                    for(var j = 0; j<=check.length-(len-1); j++){
-                        if(check.substr(j, len) == string){
-                            //move to this tab
-                            chrome.windows.update(tabs[i].windowId,{focused:true});
-                            chrome.tabs.update(tabs[i].id,{active:true});
-                            return;
-                        }
-                    }
-                }
-                chrome.tabs.query({currentWindow: false},function(tabs){
-                    for(var i = 0; i<tabs.length;i++){
-                        var check = tabs[i].url;
-                        for(var j = 0; j<=check.length-(len-1); j++){
-                            if(check.substr(j, len) == string){
-                                //move to this tab
-                                chrome.windows.update(tabs[i].windowId,{focused:true});
-                                chrome.tabs.update(tabs[i].id,{active:true});
-                            }
-                        }
-                    }
-                });
-            });
+            //change the idea to just communicate with backgroun page
+            chrome.runtime.sendMessage({"value":string,"len":len});
         });
 
         //event listener for the enter button

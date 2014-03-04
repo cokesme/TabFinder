@@ -39,8 +39,8 @@ window.onload=
         //create event if firing from enter or just have to eventlisteners and pre-built function
         var submit_event = new CustomEvent("click", {});
 
+        //talking to background js page
         submit.addEventListener("click", function(e){
-            //change the idea to just communicate with backgroun page
             chrome.runtime.sendMessage({"value":find.value,"len":find.value.length});
         });
 

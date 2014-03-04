@@ -5,9 +5,9 @@
     "description": "Finding tabs with a ctrl+f like search",
     "version" : "0.1.1",
     "icons": {
-        "16": "128_letter.png",
-        "48": "128_letter.png",
-        "128": "128_letter.png"
+        "16": "128_3.png",
+        "48": "128_3.png",
+        "128": "128_3.png"
     },
     "permissions": ["tabs"],
     "omnibox": {
@@ -18,8 +18,8 @@
 
     "browser_action": {
         "default_icon": {
-            "19": "64.png",
-            "38":"64.png"
+            "19": "128_3.png",
+            "38":"128_3.png"
         },
         "default_popup": "icon.html"
     },

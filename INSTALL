@@ -1,0 +1,10 @@
+INSTALL
+-------------
+
+1. Download TabFinder folder
+2. Go to Chrome settings
+3. Extensions tab
+4. Check Developer mode
+5. Load unpacked extenson:
+    - Select the TabFinder folder
+6. Boom!

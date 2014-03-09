@@ -3,7 +3,7 @@
 
     "name": "TabSearch",
     "description": "Finding tabs with a ctrl+f like search",
-    "version" : "0.1.4",
+    "version" : "0.1.5",
     "short_name": "Tab Search",
     "icons": {
         "16": "128_3.png",
@@ -12,7 +12,7 @@
     },
     "permissions": ["tabs"],
     "omnibox": {
-        "keyword": "tf"
+        "keyword": "ts"
     },
 
     "offline_enabled": true,

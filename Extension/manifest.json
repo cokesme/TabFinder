@@ -3,7 +3,7 @@
 
     "name": "TabFinder",
     "description": "Finding tabs with a ctrl+f like search",
-    "version" : "0.1.1",
+    "version" : "0.1.2",
     "icons": {
         "16": "128_3.png",
         "48": "128_3.png",
@@ -23,7 +23,18 @@
         },
         "default_popup": "icon.html"
     },
-
+    "commands": {
+        "_execute_broswer_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "windows": "Ctrl+Shift+F",
+                "mac": "Command+Shift+F",
+                "chromeos": "Ctrl+Shift+F",
+                "linux": "Ctrl+Shift+F"
+            },
+        "description": "easy popup"
+        }
+    },
     "background": {
       "scripts": ["background.js"],
       "persistent": false

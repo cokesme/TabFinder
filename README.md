@@ -1,4 +1,4 @@
-<h1>TabFinder</h1>
+<h1>TabSearch</h1>
 <h2>README</h2>
 
 <p>Ever have a million tabs up, and not know where to look for good ol' facebook. This is the answer.</p>

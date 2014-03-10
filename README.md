@@ -7,5 +7,5 @@
 
 <ol>To use:
 <li> search from the popup after clicking the extension icon</li>
-<li> search in the url after typing tf and tab</li>
+<li> search in the url after typing ts and tab</li>
 </ol>

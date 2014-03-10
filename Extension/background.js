@@ -7,7 +7,7 @@ function work(text){
     chrome.tabs.query({currentWindow:true, active:true}, function(tabs){
         current_tab = tabs[0];
         //alert(current_tab.index);
-        alert(tabs[0].url + ' ' + text);
+       //alert(tabs[0].url + ' ' + text);
         chrome.tabs.query({currentWindow:true},function(tabs){
             before = tabs.splice(0,current_tab.index)//grab before
             tabs.splice(0,1)//remove the current tab
@@ -37,9 +37,11 @@ chrome.omnibox.onInputEntered.addListener(function(text,disposition){
     work(text);
 });
 
-chrome.omnibox.onInputChanged.addListener(function(text,disposition){
+
+//if  want to do this then we cant have the tab update on find
+/*chrome.omnibox.onInputChanged.addListener(function(text,disposition){
     work(text);
-});
+});*/
 
 
 //receive message from find.js
